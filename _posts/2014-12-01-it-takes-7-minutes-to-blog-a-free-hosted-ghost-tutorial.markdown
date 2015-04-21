@@ -1,8 +1,5 @@
 ---
 layout: post
-title:  "It takes 7 minutes to blog, a free hosted ghost tutorial."
-date:   2014-12-01 09:31:48
-categories: 
 ---
 I decided to setup my own blog website. I've had a couple of articles in my [company's website blog](http://notninjas.com/), and I've written a couple more, so I feel ready to set out on my own. In spirit of blog-as-you-work, I've started this very article as I set out to do this.
 
@@ -23,7 +20,7 @@ I decided to go and try the first one listed, [bitnami](https://app.bitnamihosti
 1. Create a bitnami account (or login using github, google or facebook)
 2. [Enter your AWS access keys](https://wiki.bitnami.com/cloud/prepare_aws_account)
 3. [Create a new Ghost app](https://app.bitnamihosting.com/servers/new) within bitnami (its basically a button to click)
-![](/assets/it-takes-7-minutes-to-blog-a-free-hosted-ghost-tutorial/New-app-selection.png)
+![](/assets/it-takes-7-minutes-to-blog-a-free-hosted-ghost-tutorial/New app selection.png)
 4. Wait for the server to launch (mine took 5 minutes)
 
 #### Admin password
