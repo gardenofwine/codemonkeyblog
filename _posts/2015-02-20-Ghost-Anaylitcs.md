@@ -1,5 +1,6 @@
-# Adding analytics to Ghost.
-
+---
+layout: post
+---
 This blog website has been online for a while now, and you can read [here]() and [here]() about how I set it up. I didn't do ANY marketing, no twitting and no posts HackerNews; I only sent a few links to this blog in various registration forms. The reason I didn't do it is I am waiting for Analytics. I want to know how many people are viewing my posts. So this is my last post before publishing my blog.
 
 ## Google analytics

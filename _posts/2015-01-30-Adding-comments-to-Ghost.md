@@ -1,3 +1,6 @@
+---
+layout: post
+---
 Before publishing this blog I wanted to add the ability for users to post comments. I found this [great tutorial](http://ghostforbeginners.com/how-to-enable-comments-on-a-ghost-blog/) which I followed, but got stuck on step #8:
 
 `The file you are going to edit is post.hbs and is located at:`
