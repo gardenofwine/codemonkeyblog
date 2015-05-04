@@ -7,13 +7,13 @@ I was following [the guide to release a cocoapod](http://guides.cocoapods.org/ma
 
 Sure enough, there were some warnings about my podspec missing adequate description, some dead code in my source, but these were all fixable. However, I also got warning for some of the pods I am dependent on:
 
-```
+~~~console
 - WARN  |  SocketRocket/SocketRocket/SRWebSocket.m:1461:32: warning: unused function 'log_queue' [-Wunused-function]
 - WARN  | [iOS]  UIImage-ResizeMagick/UIImage+ResizeMagick.m:26:28: warning: implicit conversion loses integer precision: 'long long' to 'NSUInteger' (aka 'unsigned int') [-Wshorten-64-to-32]
 
 [!] BetterContent did not pass validation.
 You can use the `--no-clean` option to inspect any issue.
-```
+~~~
 
 *BetterContent is my pod name
 

@@ -11,7 +11,7 @@ author:
   url: "http://codemonkeyblog.com"
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
 permalink: /:title
 source: .
 destination: ./_site
