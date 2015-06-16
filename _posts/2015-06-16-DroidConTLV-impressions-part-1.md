@@ -31,8 +31,8 @@ In general, I think Ran would like all the Android developers to read the [memor
 ## Touch Events - [Oren Barad](https://www.linkedin.com/pub/oren-barad/16/986/936)
 Oren was deep diving into how touch events propagate through the views when a user taps or swipes. Some of the topics that were interesting to me:
 
-1. [dispatchTouchEvent]( http://developer.android.com/reference/android/view/ViewGroup.html#dispatchTouchEvent(android.view.MotionEvent\)), the first method to be called when there is a touch event
-2. [requestDisallowInterceptTouchEvent](http://developer.android.com/reference/android/view/ViewGroup.html#requestDisallowInterceptTouchEvent(boolean\)), when a child view (mainly inside a scrollview) wants to override their parent handling of the touch event.
+1. [dispatchTouchEvent](http://developer.android.com/reference/android/view/ViewGroup.html#dispatchTouchEvent(android.view.MotionEvent%29), the first method to be called when there is a touch event
+2. [requestDisallowInterceptTouchEvent](http://developer.android.com/reference/android/view/ViewGroup.html#requestDisallowInterceptTouchEvent(boolean%29), when a child view (mainly inside a scrollview) wants to override their parent handling of the touch event.
 3. [GestureDetector](http://developer.android.com/reference/android/view/GestureDetector.html), I didn't know such a class exists for Android. Coming from iOS, this is pretty familiar. 
 
 ## 3 Things every Android developer should know - [Ido Volff](https://www.linkedin.com/pub/ido-volff/20/21a/aa2)
