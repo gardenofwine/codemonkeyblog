@@ -1,5 +1,6 @@
 ---
 layout: post
+title: DroidConTLV Impressions - part 1
 ---
 
 On June 10-11 I attended DroidConTLV (Which was actually in a nearby town called Rishon LeZion), and here are my impressions from the sessions I attended.
@@ -8,10 +9,13 @@ On June 10-11 I attended DroidConTLV (Which was actually in a nearby town called
 
 Ran gave a good keynote about performance from the battary life perspective. What are common drainers of the battary, and tips about how to overcome them.
 
+
+
 __Facts:__
 
 1. From some survey, 70% of Battary usage goes to analytics, ads and GPS.
 
+<br>
 
 __Tips:__
 
@@ -31,15 +35,15 @@ In general, I think Ran would like all the Android developers to read the [memor
 ## Touch Events - [Oren Barad](https://www.linkedin.com/pub/oren-barad/16/986/936)
 Oren was deep diving into how touch events propagate through the views when a user taps or swipes. Some of the topics that were interesting to me:
 
-1. [dispatchTouchEvent](http://developer.android.com/reference/android/view/ViewGroup.html#dispatchTouchEvent(android.view.MotionEvent%29), the first method to be called when there is a touch event
-2. [requestDisallowInterceptTouchEvent](http://developer.android.com/reference/android/view/ViewGroup.html#requestDisallowInterceptTouchEvent(boolean%29), when a child view (mainly inside a scrollview) wants to override their parent handling of the touch event.
+1. [dispatchTouchEvent](http://developer.android.com/reference/android/view/ViewGroup.html#dispatchTouchEvent%28android.view.MotionEvent%29), the first method to be called when there is a touch event
+2. [requestDisallowInterceptTouchEvent](http://developer.android.com/reference/android/view/ViewGroup.html#requestDisallowInterceptTouchEvent%28boolean%29), when a child view (mainly inside a scrollview) wants to override their parent handling of the touch event.
 3. [GestureDetector](http://developer.android.com/reference/android/view/GestureDetector.html), I didn't know such a class exists for Android. Coming from iOS, this is pretty familiar. 
 
 ## 3 Things every Android developer should know - [Ido Volff](https://www.linkedin.com/pub/ido-volff/20/21a/aa2)
 
 This talk had a strong marketing feel to it. Ido was all about how Microsoft is great, and that all Android developers should be aware of that. I don't like these kind of talks too much, because they don't give technical details. There wasn't much in the talk I couldn't have read about online; [project Astoria](https://dev.windows.com/en-us/uwp-bridges/project-astoria) and [Azure Mobile services](http://azure.microsoft.com/en-gb/documentation/services/mobile-services/)
 
-## the "Rounds" project - [Berry Ventura Lev](https://www.linkedin.com/in/berryventura) & [Yohay Barsky](https://www.linkedin.com/pub/yohay-barsky/a/674/aa7)
+## The "Rounds" project - [Berry Ventura Lev](https://www.linkedin.com/in/berryventura) & [Yohay Barsky](https://www.linkedin.com/pub/yohay-barsky/a/674/aa7)
 [Rounds](http://www.rounds.com/) is a video chat application which I haven't heard of until DroidCon. Berry and Yohay came to talk about some of the technical and product details about how Rounds grew:
 
 1. Localization tools - using [POEditor](http://poedit.net/) apparently helped them translate the app to all the languages.
@@ -55,7 +59,12 @@ Royi talked about the new support library, and Android development in general.
 1. ActionBars are dead. Use [App Bars](http://www.android4devs.com/2014/12/how-to-make-material-design-app.html).
 2. [AppCompatDelegate](https://chris.banes.me/2015/04/22/support-libraries-v22-1-0/) - a new way to be backwards compatible. It seemed pretty simple when Royi was talking about it, but now I find I don't quite understand how this is used.
 3. Use [RecyclerViews](http://developer.android.com/reference/android/support/v7/widget/RecyclerView.html), not ListViews. Its better when used with a [SortedList](https://developer.android.com/reference/android/support/v7/util/SortedList.html)
-4. [Palette.from(Bitmap bitmap)](https://developer.android.com/reference/android/support/v7/graphics/Palette.html#from(android.graphics.Bitmap\)) - a faster way to extract those solid colors from your bitmap.
+4. [Palette.from(Bitmap bitmap)](https://developer.android.com/reference/android/support/v7/graphics/Palette.html#from%28android.graphics.Bitmap%29) - a faster way to extract those solid colors from your bitmap.
 5. [AndroidJUnitRunner](http://developer.android.com/reference/android/support/test/runner/AndroidJUnitRunner.html) - allows running JUnit4 style tests with instrumentation support. The old [InstrumentationTestRunner](http://developer.android.com/tools/testing/testing_android.html#InstrumentationTestRunner) Only supports JUnit3 style tests. More info [here](http://stackoverflow.com/a/11916340/280503)
 6. [Espresso Test Framework](https://code.google.com/p/android-test-kit/wiki/Espresso) - Much better than appium, since it runs from within the application code. Appium, on the other hand, runs on many platforms, including iOS.
 7. [UIAutomator](https://developer.android.com/tools/testing-support-library/index.html#UIAutomator) - Like Espresso, but runs outside the context of the app code. Suited for black box testing.
+
+
+
+## To be continued
+This post is getting too long, so I'm posting it as "part 1". Hopefully "part 2" will follow soon (and perhaps part 3 as well)
