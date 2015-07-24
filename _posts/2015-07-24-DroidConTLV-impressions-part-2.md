@@ -29,7 +29,7 @@ Cesar was talking about some hardships that the engineering team at [Wunderlist]
 The speakers here put great emphasis on one truth:  "Everything goes through the Binder". The Android [Binder](http://developer.android.com/reference/android/os/Binder.html). Each keyboard keystroke goes through it, any communication an application has with another application on the Android device. As such, a compromised Binder makes your application compromised as well.
 
 # Whats new in Android
-### by [Wojtek Kaliciński](https://plus.google.com/+WojtekKalicinski/posts)
+### by [Wojtek Kaliciński](https://twitter.com/wkalic)
 
 There are many article about the new features of Android M. Here are tids and bits that got my attention:
 1. Permissions - Accessing information when the user has revoked permission __wont__ result in an exception. Instead, blank info will be returned. For example - asking for the list of user contacts when the user hasn't granted the permission will result in an empty list.
