@@ -3,7 +3,7 @@ layout: post
 title: DroidConTLV Impressions - part 1
 ---
 
-On June 10-11 I attended DroidConTLV (Which was actually in a nearby town called Rishon LeZion), and here are my impressions from the sessions I attended.
+On June 10-11 I attended [DroidConTLV](http://il.droidcon.com/2015/) (Which was actually in a nearby town called Rishon LeZion). These are my own personal impressions of the sessions I've attended, and represent things that were interesting/important for me. I did not mention topics and material of which I am familiar with.
 
 ## Performance Matters - [Ran Nachmany](https://www.linkedin.com/in/rannachmany)
 
@@ -21,11 +21,11 @@ __Tips:__
 
 1. Defer work to when is best for the battary (i.e. When connected to power, or when another app wakes up the device)
 2. [WakeLock API](http://developer.android.com/reference/android/os/PowerManager.WakeLock.html) - is dangerous, and can cause power drainage if not used correctly
-3. [AlarmManager.setInexact](http://developer.android.com/reference/android/app/AlarmManager.html#setInexactRepeating(int, long, long, android.app.PendingIntent)) - is a wonderful way to give the operating system a chance to optimize power by selecting the best times for application tasks to run. Use this feature if you don't require an exact timing for an operation. 
+3. [AlarmManager.setInexact](http://developer.android.com/reference/android/app/AlarmManager.html#setInexactRepeating(int, long, long, android.app.PendingIntent)) - is a wonderful way to give the operating system a chance to optimize power by selecting the best times for application tasks to run. Use this feature if you don't require an exact timing for an operation.
 4. [Passive Location](http://developer.android.com/reference/android/location/LocationManager.html#PASSIVE_PROVIDER) - a way to piggie back on another application's request for location. Your app gets the location without actually initiating a GPS request, thus reducing the battery usage calculated for your app by the system.
-5. [JobScheduler](https://developer.android.com/reference/android/app/job/JobScheduler.html) (API 21 and up), [GCMNetworkManager](https://developers.google.com/cloud-messaging/network-manager) - ways to batch expansive network operations on cellular network. 
+5. [JobScheduler](https://developer.android.com/reference/android/app/job/JobScheduler.html) (API 21 and up), [GCMNetworkManager](https://developers.google.com/cloud-messaging/network-manager) - ways to batch expansive network operations on cellular network.
 6. JSON sucks, it uses a lot of space and requires a lot of memory to parse and serialize. Instead, use [FlatBuffer](http://android-developers.blogspot.co.il/2014/06/flatbuffers-memory-efficient.html)
-7. Reduce bitmap image sizes by using [RGB-565](http://developer.android.com/reference/android/graphics/Bitmap.Config.html#RGB_565) instead of [ARGB-8888](http://developer.android.com/reference/android/graphics/Bitmap.Config.html#ARGB_8888). Takes 50% of memory, and hardly noticable. 
+7. Reduce bitmap image sizes by using [RGB-565](http://developer.android.com/reference/android/graphics/Bitmap.Config.html#RGB_565) instead of [ARGB-8888](http://developer.android.com/reference/android/graphics/Bitmap.Config.html#ARGB_8888). Takes 50% of memory, and hardly noticable.
 8. Use [ArrayMap](https://developer.android.com/reference/android/support/v4/util/ArrayMap.html) instead of a `HashMap` for small sized maps. Its more memory efficient.
 9. Avoid unintended [AutoBoxing](https://docs.oracle.com/javase/tutorial/java/data/autoboxing.html) while using HashMaps. Using an int as the key in a HashMap can cause extrenous computations for the AutoBoxing. Instead, for smaller sized Hashes, use [SparseArray](http://developer.android.com/reference/android/util/SparseArray.html).
 10. Enums are Evil! They use much more memory than other solutions. Read this [SO  thread](http://stackoverflow.com/a/25306325/280503) for details
@@ -37,7 +37,7 @@ Oren was deep diving into how touch events propagate through the views when a us
 
 1. [dispatchTouchEvent](http://developer.android.com/reference/android/view/ViewGroup.html#dispatchTouchEvent%28android.view.MotionEvent%29), the first method to be called when there is a touch event
 2. [requestDisallowInterceptTouchEvent](http://developer.android.com/reference/android/view/ViewGroup.html#requestDisallowInterceptTouchEvent%28boolean%29), when a child view (mainly inside a scrollview) wants to override their parent handling of the touch event.
-3. [GestureDetector](http://developer.android.com/reference/android/view/GestureDetector.html), I didn't know such a class exists for Android. Coming from iOS, this is pretty familiar. 
+3. [GestureDetector](http://developer.android.com/reference/android/view/GestureDetector.html), I didn't know such a class exists for Android. Coming from iOS, this is pretty familiar.
 
 ## 3 Things every Android developer should know - [Ido Volff](https://www.linkedin.com/pub/ido-volff/20/21a/aa2)
 
