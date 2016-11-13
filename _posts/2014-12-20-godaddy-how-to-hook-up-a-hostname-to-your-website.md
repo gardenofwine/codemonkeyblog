@@ -1,6 +1,6 @@
 ---
 layout: post
-title: GoDaddy: How to hook up a hostname to your website
+title: GoDaddy - How to hook up a hostname to your website
 ---
 	
 I bought the domain codemonkeyblog.com at [godaddy.com](godaddy.com), and now I want to hook up [my blog site](http:://codemonkeyblog.bitnamiapp.com) to this url.

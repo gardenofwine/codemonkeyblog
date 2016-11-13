@@ -1,5 +1,6 @@
 ---
 layout: post
+title: It takes 7 minutes to blog (a free hosted ghost tutorial)
 ---
 I decided to setup my own blog website. I've had a couple of articles in my [company's website blog](http://notninjas.com/), and I've written a couple more, so I feel ready to set out on my own. In spirit of blog-as-you-work, I've started this very article as I set out to do this.
 
